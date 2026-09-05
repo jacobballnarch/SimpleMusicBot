@@ -20,7 +20,8 @@ pub fn toggle_mode(chat_id: i64) -> DownloadMode {
     let mut modes = chat_modes().lock().unwrap();
     let new_mode = match modes.get(&chat_id) {
         Some(DownloadMode::Direct) => DownloadMode::Resolve,
-        _ => DownloadMode::Direct,
+        Some(DownloadMode::Resolve) => DownloadMode::Direct,
+        None => DownloadMode::Resolve, 
     };
     modes.insert(chat_id, new_mode);
     new_mode
