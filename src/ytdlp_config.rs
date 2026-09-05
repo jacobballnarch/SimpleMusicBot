@@ -10,7 +10,7 @@ struct YoutubeClientArgs {
 }
 fn youtube_client_extractor_tags() ->  YoutubeClientArgs {
     let result = YoutubeClientArgs {
-        player_client: vec!["tv".to_string(), "web_safari".to_string(), "web".to_string(), "android_vr".to_string()],
+        player_client: vec!["android_vr".to_string(), "web_safari".to_string(), "web".to_string()],
         formats: vec!["missing_pot".to_string()],
     };
     result
