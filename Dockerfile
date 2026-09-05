@@ -29,7 +29,7 @@ RUN curl -L https://johnvansickle.com/ffmpeg/releases/ffmpeg-release-amd64-stati
 
 RUN curl -fsSL https://deno.land/install.sh | sh
 
-COPY --from=builder /app/target/release/SimpleMusicBot-rs ./bot
+COPY --from=builder /app/target/release/SimpleMusicBot ./bot
 RUN mkdir -p /app/downloads
 
 CMD ["./bot"]
