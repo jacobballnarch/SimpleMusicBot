@@ -1,3 +1,5 @@
+![Rust](https://img.shields.io/badge/rust-1.98-orange)
+![License](https://img.shields.io/badge/license-Apache%202.0-blue)
 # SimpleMusicBot
 Название говорит само за себя. Простой и быстрый бот для Telegram для скачивания музыки с разных ресурсов и проставлении обложек/метаданных для них.
 

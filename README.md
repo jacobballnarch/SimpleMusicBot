@@ -1,3 +1,5 @@
+![Rust](https://img.shields.io/badge/rust-1.98-orange)
+![License](https://img.shields.io/badge/license-Apache%202.0-blue)
 # SimpleMusicBot
 The name speaks for itself. A simple, fast Telegram bot for downloading music from various sources and tagging it with covers/metadata.
 
