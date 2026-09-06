@@ -24,6 +24,9 @@ RUN apt-get update \
 RUN pip install --no-cache-dir --break-system-packages \
     yt-dlp yt-dlp-ejs bgutil-ytdlp-pot-provider
 
+RUN pip install --no-cache-dir --break-system-packages --upgrade \
+    yt-dlp yt-dlp-ejs bgutil-ytdlp-pot-provider
+
 RUN curl -L https://johnvansickle.com/ffmpeg/releases/ffmpeg-release-amd64-static.tar.xz \
     | tar -xJ -C /usr/local/bin --strip-components=1 --wildcards '*/ffmpeg' '*/ffprobe'
 
